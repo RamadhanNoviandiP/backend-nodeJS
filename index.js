@@ -1,5 +1,5 @@
 const express = require('express');
-var cors = require('cors');
+const cors = require('cors');
 const app = express();
 const port = 8000;
 app.use(express.json());
@@ -14,6 +14,5 @@ app.get('/sensor3', (req, res) => {
 });
 //
 app.listen(port, ()=>{
-  console.log('\x1b[33m Welcome to the app! \x1b[0m');
-  console.log('\x1b[36m%s\x1b[0m', 'Started on http://localhost:8000')
+  console.log(`Server Berjalan di http://localhost:${port}`)
 });
